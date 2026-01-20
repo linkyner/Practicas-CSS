@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f8f6fc;
+}
+
+/* Sección principal */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fondo purple desktop */
+.left-bg {
+  position: absolute;
+  left: -200px;
+  top: -200px;
+  width: 50%;
+  height: 130%;
+  background: linear-gradient(180deg, #a333ff, #ff35ce);
+  border-bottom-right-radius: 300px;
+  z-index: -1;
+}
+
+.content {
+  max-width: 1150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Mock del teléfono */
+.phone {
+  width: 330px;
+  background: white;
+  border-radius: 35px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(90deg, #a333ff, #ff35ce);
+  padding: 18px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.header .user {
+  display: flex;
+  align-items: center;
+}
+
+.chat {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.msg {
+  background: #e8e8f3;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 75%;
+  font-size: 14px;
+}
+
+.msg.user {
+  align-self: flex-end;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.images {
+  display: flex;
+  gap: 6px;
+}
+
+.images img {
+  width: 60px;
+  border-radius: 10px;
+}
+
+.price-btn {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #a333ff, #ff35ce);
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: white;
+}
+
+.input {
+  margin-top: 10px;
+  display: flex;
+  background: #fafafa;
+  border-radius: 20px;
+  padding: 6px 10px;
+}
+
+.input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.input button {
+  border: none;
+  background: black;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+/* Texto */
+.text {
+  max-width: 450px;
+}
+
+.text h2 {
+  font-size: 36px;
+  margin-bottom: 14px;
+  color: #3b2352;
+}
+
+.text p {
+  color: #6e6a81;
+  line-height: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE MÓVIL */
+
+@media(max-width: 900px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .left-bg {
+    width: 100%;
+    height: 60%;
+    left: 0;
+    border-radius: 0 0 300px 300px;
+  }
+}

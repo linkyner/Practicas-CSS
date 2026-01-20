@@ -1,0 +1,50 @@
+a{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+:root{
+    --primary-bg-color--: #193952;
+
+}
+
+.menu {
+    width: 15%;
+    background-color: #0d2a3f;
+    color: white;
+    float: left;
+    top: 0;
+    bottom: 0;
+    padding: 15px;
+    height: 90vh;
+    max-height: 400px;
+}
+
+.menu h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    margin: 5px 0;
+}
+
+.menu a:hover {
+    background-color: #133b57;
+    border-radius: 4px;
+}
+
+form{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #193952;
+}
